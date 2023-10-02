@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout{
+            font-family: Arial;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color: blue;
+        }
+        .text{
+            background-color: #dadbf1;
+            width: 100%;
+            /* height: 100px; */
+            display: flex;
+            justify-content: center;
+            font-size: 30px;
+        }
+        main{
+            background-color: #dadbf1;
+            width: 100%;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            width: 500px;
+            height: 50px;
+        }
+        #button1{
+            background-color: black;
+            border: solid;
+            border-radius: 5px;
+            color: white;
+        }
+        #button2{
+            background-color: blue;
+            border: 20px;
+            border-radius: 15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header"> 
+            <div>
+            <a href="#">Abstract</a>
+            <a href="#">Help center</a>
+            </div>
+
+            <div>
+            <button id="button1">submit a request</button>
+            <button id="button2">sign in</button>
+            </div>
+        </div>
+
+        <div class="text">
+            <h1>How can we help?</h1>
+        </div>
+
+        <main>
+            <div class="input"> 
+            <input type="text" name="query" id="query" placeholder="Search" autocomplete="om" aria-label="Search">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
