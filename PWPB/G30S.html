@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .layout{
+        .layout{ 
             font-family: Arial;
         }
         .header{
             background-color: black;
             color: white;
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             padding: 10px;
+            font-size: 20px;
         }
         a{
             color: white;
@@ -37,23 +38,51 @@
             display: flex;
             justify-content: center;
         }
-        input{
-            width: 500px;
-            height: 50px;
+        button:hover{
+            background-color: blue;
+        }
+        button{
+            color: white;
+            font-size: 20px;
+            
         }
         #button1{
             background-color: black;
             border: solid;
             border-radius: 5px;
             color: white;
+            
+            
         }
         #button2{
-            background-color: blue;
+            background-color: #4C5FD5;  
             border: 20px;
-            border-radius: 15px;
+            border-radius: 5px;
             color: white;
+            margin-left: auto;
+            
         }
-    </style>
+        input{
+            width: 500px;
+            height: 50px;
+        }
+        .paragraf{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+        .kotak{
+            background-color: gray;
+            color: black;
+            width: 400px;
+            height: 250px;
+            margin: 30px;
+        }
+        img{
+            width: 70px     ;
+        }
+        </style>
 </head>
 <body>
     <div class="layout">
@@ -63,9 +92,9 @@
             <a href="#">Help center</a>
             </div>
 
-            <div>
-            <button id="button1">submit a request</button>
-            <button id="button2">sign in</button>
+            <div class="button">
+            <button id="button1">Submit a request</button>
+            <button id="button2">Sign in</button>
             </div>
         </div>
 
@@ -78,6 +107,75 @@
             <input type="text" name="query" id="query" placeholder="Search" autocomplete="om" aria-label="Search">
             </div>
         </main>
+
+        <div class="paragraf">
+
+            <div class="kotak">
+                <div class="logo1">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" alt="">
+                </div>
+                <div id="text">
+                    <h3>Branches</h3>
+                    <p>Abstract Branches lets you manage,version, and document your designs in one place.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="kotak">
+                <div class="logo2">
+                    <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png" alt="">
+                </div>
+                <div id="text">
+                    <h3>Manage your account</h3>
+                    <p>Configure your account settings, such as your email, profile details, and password.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="kotak">
+                <div class="logo3">
+                    <img src="" alt="">
+                </div>
+                <div id="text">
+                    <h3>Manage organizations, teams, and projects </h3>
+                    <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+            <div class="kotak">
+                <div class="logo4">
+
+                </div>
+                <div id="text">
+                    <h3>Manage billing</h3>
+                    <p>Change subscriptions and payment details.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="kotak">
+                <div class="logo5">
+
+                </div>
+                <div id="text">
+                    <h3>Authenticate to Abstract</h3>
+                    <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="kotak">
+                <div class="logo6">
+
+                </div>
+                <div id="text">
+                    <h3>Abstract support</h3>
+                    <p>Get in touch with a human.</p>
+                </div>
+                <a href="#">Learn more</a>
+            </div>
+
+        </div>
+
     </div>
 </body>
 </html>
